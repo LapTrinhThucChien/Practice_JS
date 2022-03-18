@@ -45,3 +45,10 @@ function isPositiveEvenNumber3(n){
 function isPositiveEvenNumber4(n){
     return n > 0 && n % 2 == 0;
 }
+
+let developerList = [
+    {id: 1, name: 'Huy', language: 'C#'},
+    {id: 2, name: 'Phuc', language: 'JS'},
+    {id: 3, name: 'Long', language: 'PHP'},
+    {id: 4, name: 'Tam', language: 'Go'},
+]
