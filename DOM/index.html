@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">number 1:</label><input type="text" id="number1">
+    <label for="">number 2:</label><input type="text" id="number2">
+    <button id="btnCalculateSum"  onclick="Sum()">Sum</button>
+
+    <label>Result: </label><label for="" id="lblResult"></label>
+</body>
+</html>
+
+<script>
+    function Sum(){
+        let number1Element = document.getElementById('number1');
+        let number2Element = document.getElementById('number2');
+        let resultElement = document.getElementById('lblResult');
+
+        if(number1Element && number2Element && resultElement){
+            let number1 = parseInt(number1Element.value);
+            let number2 = parseInt(number2Element.value);
+            let sum = number1 + number2;
+            resultElement.innerHTML = sum;
+        }
+    }
+</script>
