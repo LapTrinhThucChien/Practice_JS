@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./bai1.js"></script>
+    <!-- <script src="./bai2.js"></script> -->
+  </head>
+  <body>
+    Text node
+    <p>Element Node p</p>
+    <h1>Element Node h1</h1>
+    <!-- Comment Node -->
+
+    <label>number 1:</label>
+    <input type="text" id="number1" />
+    <label>number 2:</label>
+    <input type="text" id="number2" />
+    <button onclick="calSubstract()">Substract</button>
+    <label>Result: </label><label id="result"></label>
+
+    <div class="gameshow">
+      <h1>Quay số trúng thưởng</h1>
+      <button onclick="gameShow()" id="btnPresent">Quay</button>
+      <label for="">Kết quả: </label><span id="result1"></span>
+    </div>
+
+    <script src="./bai2.js"></script>
+    <script>
+      function GetNodeBody() {
+        let nodes = document.body.childNodes;
+        for (let i = 0; i < nodes.length; i++) {
+          let node = nodes[i];
+          console.log(node.nodeType);
+          console.log(node.nodeName);
+        }
+      }
+      GetNodeBody();
+    </script>
+  </body>
+</html>

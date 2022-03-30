@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript HTML DOM</h2>
+    <p>Changing the HTML style:</p>
+    <p id="p1">Hello World!</p>
+    <p id="p2">Hello World!</p>
+    <div id="container">
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            At reiciendis modi adipisci nam? Cum omnis doloribus placeat
+            qui est minus amet repellendus, natus praesentium autem, dicta quasi, v
+            ero aliquam dolorum.</p>
+    </div>
+
+    <script>
+        var p2Element = document.getElementById("p2");
+        if (p2Element) {
+            p2Element.style.color = "blue";
+        }
+        document.querySelector("#p2").style.fontFamily = "Arial";
+        const containerElement = document.querySelector('#container');
+        containerElement.querySelector('.description').style.color = "blue";
+        containerElement.querySelector('.description').style.backgroundColor = "yellow";
+    </script>
+
+
+</body>
+
+</html>

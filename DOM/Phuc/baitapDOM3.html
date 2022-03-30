@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quay số trúng thưởng </title>
+</head>
+
+<body>
+   <div class="Game Show">
+      <h1> Quay số trúng thưởng </h1>
+      <button onclick="gameShow()">Quay</button>
+      <label for="">Kết Quả: </label><span id="result"></span>
+      <script>
+         function gameShow() {
+            let randomNumber = Math.round(Math.random() * 10);
+            console.log(randomNumber);
+            const result = document.getElementById("result");
+            if (result) {
+               if (randomNumber == 10) {
+                  result.innerHTML = "Bạn đã trúng giải nhất";
+               } else if (randomNumber >= 8) result.innerHTML = "Bạn đã trúng giải nhì";
+               else if (randomNumber >= 7) result.innerHTML = "Bạn đã trúng giải ba";
+               else if (randomNumber > 5) result.innerHTML = "Bạn đã trúng giải khuyến khích";
+               else result.innerHTML = "Chúc bạn may mắn lần sau";
+            }
+         }
+      </script>
+   </div>
+</body>
+
+</html>
