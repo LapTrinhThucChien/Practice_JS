@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 100 node html phía trước -->
+    <h3>100 node html phía trước</h3>
+    <div id="course">
+        <h3 class="name">JS</h3>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium aperiam recusandae odio cupiditate fugiat quia architecto praesentium a suscipit,
+            nam ullam cumque, maxime rem quam omnis facere similique ipsa veniam.</p>
+    </div>
+    <!--  -->
+    <script>
+        //BAD
+        // const courseName = document.querySelector('#course .name');
+        // const courseDescription = document.querySelector('#course .description');
+        // console.log(courseName);
+        // console.log(courseDescription);
+
+        //Good narrow down
+        const courseElement = document.getElementById('course');
+        if (courseElement) {
+            const courseName = courseElement.querySelector('.name');
+            const courseDescription = courseElement.querySelector('.description');
+            console.log(courseName);
+            console.log(courseDescription);
+        }
+    </script>
+</body>
+
+</html>
