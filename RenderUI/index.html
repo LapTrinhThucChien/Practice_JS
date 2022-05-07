@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Render UI</title>
+</head>
+
+<body>
+    <br>
+    <ul id="categoryList"></ul>
+    <!-- Template -->
+    <template id="categoryTemplate">
+    <li class="category">
+        <div class="category_content">
+            <p class="category_name">Name</p>
+            <p class="category_createAt">Create date</p>
+        </div>
+        <div class="category_action">
+            <button type="button" class="btn btn-remove">Remove</button>
+        </div>
+    </li>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

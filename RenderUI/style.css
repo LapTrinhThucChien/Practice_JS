@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.category{
+    display: flex;
+    background-color: rgb(238 238 238);
+    max-width: 400px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.category_content{
+    display: flex;
+    font-size: 18px;
+}
+
+.category_name, .category_createAt{
+    margin: auto 10px;
+}
+
+.category_action{
+    margin: auto;
+}
+
+.btn{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-remove{
+    background-color: rgb(215, 80, 80);
+}
